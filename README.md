@@ -1,10 +1,10 @@
 # EXECUTION-OF-TIMER-OPERATIONS-USING-LADDER-LOGIC-PROGRAMMING
 
 
- #### NAME :
- #### REGISTER NUMBER :
- #### DEPARTMENT 
- #### YEAR 
+ #### NAME : S DEVESH SHARMA
+ #### REGISTER NUMBER : 212222110008
+ #### DEPARTMENT : CSE ( IoT )
+ #### YEAR : III
 
  
 # Aim:
@@ -12,12 +12,19 @@ To understand and implement timer operations in a PLC using ladder logic and ver
 
 # Apparatus Required:
 Programmable Logic Controller (PLC) - A PLC that supports timer functions.
+
 PLC Programming Software - Software such as RSLogix, TIA Portal, or CX-Programmer.
+
 Computer System - For programming and simulating the PLC ladder logic.
+
 Input Devices - Push buttons or switches for triggering the timer operations.
+
 Output Devices - LEDs or any other indicators to visualize the timer output.
+
 Wires and Connectors - For interfacing input/output devices with the PLC.
+
 Power Supply - Appropriate power supply for the PLC and peripherals.
+
 # Theory:
 Timers in PLCs are used to introduce delays in control processes. They are fundamental in operations where the timing of events is crucial, 
 such as starting a motor after a delay, turning off a light after a specified time, or maintaining a state for a fixed duration.
@@ -29,25 +36,33 @@ Functionality:
 The ON-delay timer starts timing when the input condition becomes TRUE (ON).
 After the preset time has elapsed, the timer output becomes TRUE (ON).
 If the input condition turns FALSE (OFF) before the timer completes, the timer resets, and the output remains FALSE.
+
 2. OFF-Delay Timer (TOF)
+   
 Functionality:
 
 The OFF-delay timer starts timing when the input condition turns FALSE (OFF).
 The timer output remains TRUE (ON) during the preset delay time and then turns FALSE (OFF) after the time has elapsed.
 If the input condition becomes TRUE (ON) during the timing process, the timer resets.
+
 3. Retentive ON-Delay Timer (RTO)
+   
 Functionality:
 
 The Retentive ON-delay timer accumulates time as long as the input condition is TRUE (ON).
 The accumulated time is retained even if the input condition turns FALSE (OFF).
 The timer continues from the accumulated time when the input condition becomes TRUE again.
 A separate reset input is usually provided to clear the accumulated time.
+
 4. Pulse Timer (TP or TONR)
+   
 Functionality:
 
 The Pulse Timer generates an output pulse of a specific duration when the input condition becomes TRUE (ON).
 The output remains TRUE for the preset duration, regardless of the input state.
+
 5. Timer-On Interval (TONI)
+
 Functionality:
 
 The Timer-On Interval is a variation of the ON-delay timer but is used to measure the time interval while the input is TRUE (ON).
@@ -81,20 +96,11 @@ Retentive Timer: The output should turn on after the accumulated time reaches th
 
 
 # Simulation Screenshots 
+## ON-Delay Timer:
+![Exp-2-2](https://github.com/user-attachments/assets/8fe18a84-b0ce-4e45-90b5-5a02e7d00bd5)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+## OFF-Delay Timer:
+![Exp-2-1](https://github.com/user-attachments/assets/08705de0-f9e0-4473-9d0d-d0ae6a420f2a)
 
 # Results:
 The ladder logic programs for ON-delay, OFF-delay, and Retentive timers were successfully implemented and tested.
